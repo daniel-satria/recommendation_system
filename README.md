@@ -9,85 +9,20 @@
 5. [Matrix Factorization : SVD & Funk SVD](notebooks/5-collaborativeFiltering_funkSvd.ipynb)
 6. [Collaborative Filtering with Context & Factorization Machine](notebooks/6-contextAware_factorizationMachine.ipynb.ipynb)
 7. [Recommendation System for Implicit Data & Logistic Matrix Factorization](notebooks/7-implicitData_logisticMatrixFactorization.ipynb)
-### Alternating Least Squares
----
-**Objective**
-$$
-\text{Objective}= \underset{}{\min}
-\left [
- \sum_{u \in U} \sum_{n \in I}(p_{ui}^{(n)} - \hat{p_{ui}}^{(n)})^2
-\right ]
-$$
 
-with
+**Alternating Least Squares**
+We add regularization in purpose to make our model can avoid overfitting, adding Ridge Regularization is what we do here.
 
-$$
-p_{ui} = \begin{cases}
-  1 & r_{ui} > 0 \\
-  0 & r_{ui} < 0
-\end{cases}
-$$
-- $r_{ui}$ : Implicit data feedback from user u to item i
-
-Our main goal is to minimize preference error, between true preference - predicted preference.
-
-Add term $\cfrac{1}{2}$ (optional), the purpose is to make the derivative more simple.
-
-$$
-\text{Objective}= \underset{}{\min} \cfrac{1}{2}
-\left [
- \sum_{u \in U} \sum_{n \in I}(p_{ui}^{(n)} - \hat{p_{ui}}^{(n)})^2
-\right ]
-$$
-
-Adding confidence term
-
-
-$$
-\text{Objective}= \underset{}{\min} \cfrac{1}{2}
-\left [
- \sum_{u \in U} \sum_{n \in I} c_{ui}(p_{ui}^{(n)} - \hat{p_{ui}}^{(n)})^2
-\right ]
-$$
-
-- $c_{ui} = 1 + \alpha r_{ui}$
-
-We remember that to predict user preference towards item i is yielded from dot product $x_u . y_i^T$
-
-with  :     
-- $x_u$ : User u latent factor
-- $y_i$ : Item i latent factor
+Final Objective Function as follow :
 
 $$
 \text{Objective}= \underset{x^*,y^*}{\min} \cfrac{1}{2}
 \left [
- \sum_{u \in U} \sum_{n \in I} c_{ui}(p_{ui} - x_u.y_i^T)^2
-\right ]
-$$
-
-- $c_{ui} = 1 + \alpha r_{ui}$
-
-Adding Regularization
-
-The purpose of adding regularization is to make our model can avoid overfitting.We can add Ridge Regularization.
-
-- We come to **Final Objective Function** as follow :
-
-
-$$
-\text{Objective}= \underset{x^*,y^*}{\min} \cfrac{1}{2}
-\left [
- \sum_{u \in U} \sum_{n \in I} c_{ui}(p_{ui} - x_u.y_i^T)^2
+\sum_{u \in U} \sum_{n \in I} c_{ui}(p_{ui} - x_u.y_i^T)^2
 \right ] + \cfrac{\lambda}{2} \sum_{u \in U} \sum_{n \in I} \left[  ||x_u||^2 + ||y_i||^2 \right]
 $$
 
 - $c_{ui} = 1 + \alpha r_{ui}$
-
-#### Initialization
-
-There are two parameters in Alternating Least Squares
-- $x_u$ : User factor , matrix `<n_users x n_factor>`
-- $y_i$ : Item factor , matrix `<n_items x n_factor>`
 
 
 8. [Learning to Rank & Bayesian Personalized Ranking](notebooks/8-learningToRank_bayesianPersonalizedRanking.ipynb)
