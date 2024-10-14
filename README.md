@@ -15,12 +15,10 @@ We add regularization in purpose to make our model can avoid overfitting, adding
 
 Final Objective Function as follow :
 
-$$
-\text{Objective}= \underset{x^*,y^*}{\min} \cfrac{1}{2}
+$$\text{Objective}= \underset{x^*,y^*}{\min} \cfrac{1}{2} 
 \left [
 \sum_{u \in U} \sum_{n \in I} c_{ui}(p_{ui} - x_u.y_i^T)^2
-\right ] + \cfrac{\lambda}{2} \sum_{u \in U} \sum_{n \in I} \left[  ||x_u||^2 + ||y_i||^2 \right]
-$$
+\right ] + \cfrac{\lambda}{2} \sum_{u \in U} \sum_{n \in I} \left[  ||x_u||^2 + ||y_i||^2 \right]$$
 
 - $c_{ui} = 1 + \alpha r_{ui}$
 
