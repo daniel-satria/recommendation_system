@@ -22,12 +22,7 @@ where :
 with : 
 - $c_{ui} = 1 + \alpha r_{ui}$
 - $c_{ui} = 1 + \alpha r_{ui}$ have similar size to utility matrix `<n_users,n_items>`
-- $
-p_{ui} = \begin{cases}
-  1 & r_{ui} > 0 \\
-  0 & r_{ui} < 0
-\end{cases}  
-$ have similar size to utility matrix `<n_users,n_items>`
+- $p_{ui} = \begin{cases} 1 & r_{ui} > 0 \\ 0 & r_{ui} < 0 \end{cases}$ have similar size to utility matrix `<n_users,n_items>`
 
 - $r_{ui}$ : Implicit data feedback from user u to item i
 
