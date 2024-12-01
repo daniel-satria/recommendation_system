@@ -4,7 +4,7 @@
 
 ### 1. [Intro & Recommendation System Workflow](notebooks/1-intro_workflow.ipynb)
 
-### 2. Measure Similarity & Content-based Recommendation System
+### 2. [Measure Similarity & Content-based Recommendation System](notebooks/2.measureSimilarity_contentBasedRecommendationSystem.ipynb)
 
 ### 3. Evaluation of Recommendation System
 
