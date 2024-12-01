@@ -1,0 +1,11 @@
+--2024-12-01 12:30:18--  https://i0.wp.com/analyticsarora.com/wp-content/uploads/2022/03/collaborative-filtering-shown-visually.png?resize=800%2C600
+Resolving i0.wp.com (i0.wp.com)... 192.0.77.2
+Connecting to i0.wp.com (i0.wp.com)|192.0.77.2|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 21886 (21K) [image/png]
+Saving to: ‘collaborative-filtering-shown-visually.png?resize=800,600’
+
+              collaborative-   0%[                                              ]       0  --.-KB/s               collaborative-filtering-show 100%[=============================================>]  21.37K  --.-KB/s    in 0.01s   
+
+2024-12-01 12:30:19 (1.40 MB/s) - ‘collaborative-filtering-shown-visually.png?resize=800,600’ saved [21886/21886]
+
