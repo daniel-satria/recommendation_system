@@ -34,13 +34,13 @@ recommendation_system
 │  ├─ tripadvisor_travel.csv
 │  └─ user_artist_play.csv
 ├─ notebooks
-│  ├─ 1-intro_workflow.ipynb
+│  ├─ 1.intro_workflow.ipynb
 │  ├─ 2.measureSimilarity_contentBasedRecommendationSystem.ipynb
 │  ├─ 3.recsysEvaluation.ipynb
 │  ├─ 4.collaborativeFiltering.ipynb
-│  ├─ 5-collaborativeFiltering_funkSvd.ipynb
-│  ├─ 6-contextAware_factorizationMachine.ipynb
-│  ├─ 7-implicitData_logisticMatrixFactorization.ipynb
-│  └─ 8-learningToRank_bayesianPersonalizedRanking.ipynb
+│  ├─ 5.collaborativeFiltering_funkSvd.ipynb
+│  ├─ 6.contextAware_factorizationMachine.ipynb
+│  ├─ 7.implicitData_logisticMatrixFactorization.ipynb
+│  └─ 8.learningToRank_bayesianPersonalizedRanking.ipynb
 └─ requirements.txt
 ```
