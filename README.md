@@ -10,9 +10,9 @@
 
 ### 4. [Collaborative Filtering](notebooks/4.collaborativeFiltering.ipynb)
 
-### 5. [Matrix Factorization : SVD & Funk SVD](notebooks/5-collaborativeFiltering_funkSvd.ipynb)
+### 5. [Matrix Factorization : SVD & Funk SVD](notebooks/5.svd_funkSvd.ipynb)
 
-### 6. [Collaborative Filtering with Context & Factorization Machine](notebooks/6.contextAware_factorizationMachine.ipynb.ipynb)
+### 6. [Collaborative Filtering with Context & Factorization Machine](notebooks/6.contextAware_factorizationMachine.ipynb)
 
 ### 7. [Recommendation System for Implicit Data & Logistic Matrix Factorization](notebooks/7.implicitData_logisticMatrixFactorization.ipynb)
 
